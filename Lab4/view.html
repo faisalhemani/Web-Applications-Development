@@ -1,0 +1,19 @@
+<br>
+<div id="one" class="col-sm-6">
+<h3>To Do</h3>
+<div  ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done" ng-checked="remove()"> <span ng-bind="x.todoText"></span><span ng-bind="x.description"></span>
+</div>
+</div>
+<br>
+<div id="one"  class="col-sm-6">
+<h3>Done</h3>
+<div id="one" ng-repeat="x in doneList">
+    <span id="sp" ng-bind="x.todoText"></span>
+</div> 
+<div id="one" ng-repeat="x in gawd | filter: {done: true} | filter: x.todoText != x.todoText in doneList">
+    <span id="sp" ng-bind="x.todoText"></span>
+</div>
+</div>
+<br>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    body{
+	background: url('http://www.1designshop.com/wp-content/uploads/2015/12/1dsp-20151221-backgroung002.png') no-repeat center center fixed;
+	background-size:cover;
+    }
+    #two {
+      background-color: #fff;	
+      color: #000;
+	padding: 10px;
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;
+	z-index:15;
+      display: block;
+    }
+    #one {
+      background-color: #fff;
+      display: block;
+	padding: 10px;
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;
+	z-index:15;
+    }
+    #dropzone {
+	width: 300px;
+	height: 300px;
+	color: #000;
+	background-color: #67a5c9;   
+   }
+   span{
+	padding: 10px;
+   }
+   h2, form, input {
+	padding: 5px;
+	text-align: center;
+   }
+   
+  </style>
+</head>
+<body  ng-app="myApp" ng-controller="todoCtrl">
+
+<h2>My Todo List</h2>
+
+<form class="col-sm-12" ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" placeholder="Add New">
+    <input type="text" ng-model="desInput" placeholder="Description">
+    <input type="submit" value="Add New">
+</form>
+<div ng-include="view"></div>
+<!-- <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" ondrop="drop(event)" ondragenter="onDragEnter(event)" ondragleave="onDragLeave(event)">Drop Shit Here</div> -->	
+<script src="app.js"></script> 
+</body>
+</html>
+
+	

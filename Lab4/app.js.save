@@ -1,0 +1,69 @@
+var app = angular.module('myApp', []); 
+var sp = document.getElementById('sp');
+app.controller('todoCtrl', function($scope) {
+    $scope.todoList = [{"todoText":"Clean House", "done":false}, {"todoText":"Buy Groceries", "done":false}, 
+        {"todoText":"Wash Dishes", "done":false}, {"todoText":"Cook Dinner", "done":false}];
+    $scope.doneList = [{"todoText":"Vaccume", "done":true}];
+
+    $scope.todoAdd = function() {
+        $scope.todoList.forEach(function(x){
+        	if ($scope.todoInput === x.todoText){
+        		alert("already exists");
+			//$scope.todoList.push({todoText:$scope.todoInput, done:false}); 
+        	} else {
+			break;
+		}
+        });
+        $scope.todoInput = "";
+    };
+
+    $scope.remove = function() {
+        var list = $scope.todoList;
+        $scope.todoList = [];
+        list.forEach(function(x) {  
+            if (!x.done){
+                 $scope.todoList.push(x);
+             } else {
+                 $scope.doneList.push(x);
+             }
+        });
+    };    
+});
+
+/*function onDragEnter(e) {
+  e.preventDefault();
+  document.getElementById("dropzone").style.borderColor = "#000000";
+  document.getElementById("dropzone").style.color = "#000000";
+}
+
+function onDragLeave(e) {
+  document.getElementById("dropzone").style.backgroundColor = "#ffffff";
+  document.getElementById("dropzone").style.color = "#ccc";
+  document.getElementById("dropzone").style.borderColor = "#ccc";
+}
+
+function allowDrop(e) {
+    e.preventDefault();
+  document.getElementById("dropzone").style.backgroundColor = "#9ad3de";
+}
+
+function drop(e) {
+  e.preventDefault();
+  document.getElementById("dropzone").style.backgroundColor = "#ffffff";
+  document.getElementById("dropzone").style.color = "#ccc";
+  document.getElementById("dropzone").style.borderColor = "#ccc";
+  var file = e.dataTransfer.files[0];
+  if (file.type.indexOf("json") == 0) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+    var text = JSON.parse(e.target.result);
+    for (var i = 0; i < text.length; i++){
+        if (text[i].done === false){
+            $scope.todoList.push(text[i]);
+        } else {
+            $scope.doneList.push(text[i]);
+        }
+    }
+    }
+    reader.readAsText(file);
+}*/

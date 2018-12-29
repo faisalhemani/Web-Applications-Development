@@ -1,0 +1,27 @@
+[{
+	"todoText": "Clean House",
+	"description": "Broom and Mop",
+	"done": false
+}, {
+	"todoText": "Buy Groceries",
+	"description": "Milk, fruits, Veggies",
+	"done": false
+}, {
+	"todoText": "Wash Dishes",
+	"description": "Put in dishwasher",
+	"done": true
+}, {
+	"todoText": "Cook Dinner",
+	"description": "Make Lasagna",
+	"done": false
+}, {
+	"todoText": "Vaccume",
+	"description": "The whole house",
+	"done": true
+},
+"description": "Broom and Mop",{
+        "todoText": "Laundy",
+	"description": "Wash all the clothes",	
+        "done": true
+},
+"description": "Broom and Mop",]

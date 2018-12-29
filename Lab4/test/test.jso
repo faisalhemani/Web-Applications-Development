@@ -1,0 +1,17 @@
+
+[{
+	"todoText": "Clean House",
+	"done": false
+}, {
+	"todoText": "Buy Groceries",
+	"done": false
+}, {
+	"todoText": "Wash Dishes",
+	"done": false
+}, {
+	"todoText": "Cook Dinner",
+	"done": false
+}, {
+	"todoText": "Vaccume",
+	"done": true
+}]

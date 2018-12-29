@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="todoCtrl" id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" ondrop="drop(event)" ondragenter="onDragEnter(event)" ondragleave="onDragLeave(event)">
+
+<h2>My Todo List</h2>
+
+<form ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
+    <input type="submit" value="Add New">
+</form>
+
+<br>
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done" ng-checked="remove()"> <span ng-bind="x.todoText"></span>
+</div>
+<!-- <div ng-repeat="y in doneList">
+    <span id="sp" ng-bind="y.todoText"></span>
+</div> -->
+<script src="test.js"></script> 
+</body>
+</html>

@@ -1,0 +1,41 @@
+[{
+	"todoText": "Clean House",
+	"description": "Clean the whole hosue",
+	"done": false
+}, {
+	"todoText": "Buy Groceries",
+	"description": "buy all the clothes",
+	"done": false
+}, {
+	"todoText": "Wash Dishes",
+	"description": "Wash All the dishes",
+	"done": true
+}, {
+	"todoText": "Cook Dinner",
+	"description": "cook all the food",
+	"done": false
+}, {
+	"todoText": "Vaccume",
+	"description": "Vaccume the whole house",
+	"done": true
+},
+{
+        "todoText": "Laundy",
+	"description": "Wash all the clothes",
+        "done": true
+},
+{
+        "todoText": "Mow Lawn",
+        "description": "Mow all the grass",
+        "done": false
+},
+{
+        "todoText": "Wash Car",
+        "description": "Wash the whole car",
+        "done": false
+},
+{
+        "todoText": "Work Out",
+        "description": "do all the push ups",
+        "done": true
+}]

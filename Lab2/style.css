@@ -1,0 +1,189 @@
+body{
+	background-image: url('http://umad.com/img/2015/7/city-light-blur-wallpaper-background-2709-2855-hd-wallpapers.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+#form{
+	width: 100%;
+	display : block;
+	float: center;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	color: #ffffff;
+}
+
+#box{
+	width :100%;
+	height: 80%;
+	margin-bottom: 31%;
+}
+
+#pic {
+	float:left;
+}
+
+h1 {
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif, sans-serif;
+	font-weight: 100;
+	font-size: 5em;
+	color: #ffffff;
+	margin-left:20px;
+
+}
+
+
+h3 {
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif, sans-serif;
+	font-weight: 200;
+	font-size: 1.5em;
+	color: #ffffff;
+	margin-left:20px;
+
+}
+
+h4 {
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif, sans-serif;
+	font-weight: 200;
+	font-size: 1.5em;
+	color: #ffffff;
+	margin-left:20px;
+
+}
+
+h5 {
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif, sans-serif;
+	font-weight: 200;
+	font-size: 1em;
+	color: #ffffff;
+	margin-left:20px;
+
+}
+
+
+p {
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif, sans-serif;
+	font-weight: 200;
+	color: #ffffff;
+}
+
+#city {
+	width: 50%;
+}
+
+#btn {
+	width:45px;
+}
+
+#current {
+	display: inline-block;
+	color: #ffffff;
+	background-color: #000000;
+	width: 100%;
+	margin-top: 70px;
+	padding-left: 20px;
+	text-align: left;
+	box-shadow: 0px 3px 6px black;
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;
+	z-index:15;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.5s;
+}
+
+#hourly {
+	display: inline-block;
+	color: #ffffff;
+	background-color: #000000;
+	width: 100%;
+	margin-top: 50px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	box-shadow: 0px 3px 6px black;
+	float: left;
+	max-height: 300px;
+	margin-bottom: 10px;
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;
+	z-index:15;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.5s;
+}
+
+#days {
+	display: inline-block;
+	color: #ffffff;
+	background-color: #000000;
+	width: 100%;
+	margin-top: 50px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	box-shadow: 0px 3px 6px black;
+	float: left;
+	max-height: 300px;
+	margin-bottom: 10px;
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;
+	z-index:15;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.5s;
+}
+
+#hr2 {
+	display: inline-block;
+	text-align: center;
+	height: 100%;
+	width: 16%;
+	padding:15px;
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif, sans-serif;
+	font-weight: 200;
+	color: #ffffff;
+
+}
+
+
+@media only screen and (max-width: 360px) {
+	#current{
+		width:94%;
+	}
+	#hr2{
+		width:15%
+	}
+
+}
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+	#current{
+		width:97.3%;
+	}
+	#hr2{
+		width:16%
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	#current{
+		width:98%;
+	}
+	#hr2{
+		width:17%
+	}
+
+}
+@media only screen and (min-width: 993px)  {
+	#current{
+		width:98.3%;
+	}
+	#hr2{
+		width:17%
+	}
+
+}
+
+
