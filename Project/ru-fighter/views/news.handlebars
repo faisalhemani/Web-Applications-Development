@@ -1,0 +1,31 @@
+
+	<div class='container-large' id='panel'>
+		<div class='container'>
+			<div class='row'>
+				<div class="col-xs-12">
+					<h2 class='page-header'>News</h2>
+				</div>
+			</div>
+			<div class='row'>
+				{{#if admin}}
+					<form method='post' action='/news'>
+						<div class='col-xs-12'>
+							<textarea rows='5' class='form-control' id='news' type='text' placeholder='news' name='news'></textarea>
+							<input name='title' id='title' type='text' class='form-control' placeholder='title'>
+						</div>
+						<div id='submit-container' class='col-xs-12 center'>
+							<button type='submit' class='btn btn-sm'>Submit</button>
+						</div>
+					</form>
+				{{/if}}	
+			</div>
+			<div class='row'>
+				{{#each news}}
+					<div class='col-xs-12'>
+						<h2 class='title'><a href='/{{this.title}}'>{{this.title}}</a></h2>
+						<p class='summary'>{{this.message}}</p>
+					</div>
+				{{/each}}	
+			</div>
+		</div>
+	</div>

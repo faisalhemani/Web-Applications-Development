@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<title>RU-Fighter</title>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<script type="text/javascript" src="/javascripts/phaser.min.js"></script>
+
+		<script type="text/javascript" src="/javascripts/lose.js"></script>
+
+                <script type="text/javascript" src="/javascripts/win.js"></script>
+
+		<script type="text/javascript" src="/javascripts/battle.js"></script>
+                <script type="text/javascript" src="/javascripts/faisal.js"></script>
+                <script type="text/javascript" src="/javascripts/alex.js"></script>
+                <script type="text/javascript" src="/javascripts/jess.js"></script>
+                <script type="text/javascript" src="/javascripts/retinder.js"></script>
+                <script type="text/javascript" src="/javascripts/tom.js"></script>
+                <script type="text/javascript" src="/javascripts/xavier.js"></script>
+		<script type="text/javascript" src="/javascripts/nhan.js"></script>
+		<script type="text/javascript" src="/javascripts/topTxt.js"></script>
+		<script type="text/javascript" src="/javascripts/science.js"></script>
+		<script type="text/javascript" src="/javascripts/engineering.js"></script>
+
+
+		<script type="text/javascript" src="/javascripts/ai.js"></script>
+                <script type="text/javascript" src="/javascripts/ai_science.js"></script>
+                <script type="text/javascript" src="/javascripts/ai_engineering.js"></script>
+
+
+		<script type="text/javascript" src="/javascripts/slash.js"></script>
+		<script type="text/javascript" src="/javascripts/water.js"></script>
+		<script type="text/javascript" src="/javascripts/laserBeam.js"></script>
+		<script type="text/javascript" src="/javascripts/heal.js"></script>
+
+                <script type="text/javascript" src="/javascripts/play.js"></script>
+                <script type="text/javascript" src="/javascripts/char.js"></script>
+                <script type="text/javascript" src="/javascripts/map.js"></script>
+		<script type="text/javascript" src="/javascripts/settings.js"></script>
+		<script type="text/javascript" src="/javascripts/instructions.js"></script>
+                <script type="text/javascript" src="/javascripts/title.js"></script>
+
+                <script type="text/javascript" src="/javascripts/logo.js"></script>
+
+		<script type="text/javascript" src="/javascripts/load.js"></script>
+
+                <script type="text/javascript" src="/javascripts/start.js"></script>
+
+		<script type="text/javascript" src="/javascripts/menu.js"></script>
+
+		<script type="text/javascript" src="/javascripts/map.js"></script>
+
+                <script type="text/javascript" src="/javascripts/game.js"></script>
+
+                <script type="text/javascript" src="/javascripts/characterMovement.js"></script>
+
+
+
+
+
+
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="http://ru-fighter.ddns.net/rsc/img/favicon.ico" />
+	</head>
+	<body onload="">
+		 
+		<!-- <script type="text/javascript" src="/javascripts/main.js"></script> -->	
+		<div id='phaser-container'></div>
+		<script type='text/javascript'>
+			var player =  {
+				name: '{{players.name}}',
+				avatar : '{{players.avatar}}',
+				facility : '{{players.facility}}',
+				created : {{players.created}},
+				ramz : {{players.ramz}},
+				skills : [
+				{{# each players.skills}}
+					{
+						name : '{{this.name}}',
+						tier : '{{this.tier}}',
+						dmg : {{this.dmg}},
+						stats : {{this.manacost}}
+					},
+				{{/each}}
+				],
+				stats : {{{players.stringify}}}	
+			};
+			console.log(player.name);
+		</script>
+		<!--	 
+		<script src="/javascripts/game.js"></script>
+		-->
+		<script src="/javascripts/player.js"></script>
+		<script type="text/javascript" src='/javascripts/atomicReconstruction.js'></script>
+		<script type="text/javascript" src='/javascripts/explosion.js'></script>
+		<script type="text/javascript" src='/javascripts/spiritBomb.js'></script>
+		<script type='text/javascript' src='/javascripts/kunai.js'></script>
+		<!--
+		<script src="/javascripts/script.js"></script> 
+		-->
+	</body>
+</html>

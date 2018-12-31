@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<title>RU-Fighter!</title>
+		<script type="text/javascript" src="/javascripts/phaser.min.js"></script>
+ 		<script type="text/javascript" src="/javascripts/battle.js"></script>
+	 	<script type="text/javascript" src="/javascripts/faisal.js"></script>
+ 		<script type="text/javascript" src="/javascripts/alex.js"></script>
+ 		<script type="text/javascript" src="/javascripts/jess.js"></script>
+ 		<script type="text/javascript" src="/javascripts/retinder.js"></script>
+ 		<script type="text/javascript" src="/javascripts/tom.js"></script>
+ 		<script type="text/javascript" src="/javascripts/xavier.js"></script>
+
+
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="http://ru-fighter.ddns.net/rsc/img/favicon.ico" />
+	</head>
+	<body onload="">
+		 
+		<script type="text/javascript" src="/javascripts/main.js"></script>
+		<div id='phaser-container'></div>	
+		<!--	 
+		<script src="/javascripts/game.js"></script>
+		<script src="/javascripts/player.js"></script>
+		<script type="text/javascript" src='/javascripts/atomicReconstruction.js'></script>
+		<script type="text/javascript" src='/javascripts/explosion.js'></script>
+		<script type="text/javascript" src='/javascripts/spiritBomb.js'></script>
+		<script src="/javascripts/script.js"></script> 
+		-->
+	</body>
+</html>

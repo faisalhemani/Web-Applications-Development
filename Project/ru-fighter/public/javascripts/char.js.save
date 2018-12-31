@@ -1,0 +1,15 @@
+
+var char = {
+        preload: function () {
+                console.log("CHARSELECT");
+        },
+        create: function () {
+		http://35.162.14.150/public/
+                this.state.start('map');
+        }
+};
+
+
+
+
+

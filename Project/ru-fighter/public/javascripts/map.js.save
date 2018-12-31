@@ -1,0 +1,79 @@
+var map = {
+        preload: function () {
+                console.log("MAP");
+                this.logo = this.add.sprite(this.game.world.centerX, this.game.centerY);
+                this.logo.anchor.setTo(0.5);
+
+                this.preloadBar = this.add.sprite(this.game.world.centerX, this.game.world.centerY -25);
+                this.preloadBar.anchor.setTo(0.5);
+                this.load.setPreloadSprite(this.preloadBar);
+
+                this.load.image("faisal", "http://35.162.14.150/game_engine/js/CharSelect/faisal.png");
+                this.load.image("xavier", "http://35.162.14.150/game_engine/js/CharSelect/xavier.png");
+                this.load.image("bg", "assets/charselect/atrium.jpg");
+
+		//move to load state!!!!!!!!!!!!!!!!!!!!!
+		this.map = this.load.image("map", "assets/map.png");
+		this.town = this.load.image("town", "assets/enemy_btn.png");
+        },
+        create: function () {
+                // this is just to test stuff
+                /*game.background = this.game.add.sprite(0,0, 'bg');
+                var character = game.add.sprite(0,0,'faisal');
+                character.anchor.set(0.5);
+                character.inputEnabled = true;
+                character.scale.setTo(0.65);*/
+
+		this.map = this.add.image(0, 0, "map");
+		//this.map.scale.setTo(1);
+		this.map.width = 1100;
+		this.map.height = 600;
+/*
+		for(var i = 0; i < 7; i++) {
+			var town = this.add.image(this.rnd.integerInRange(50, this.game.world.width - 50), game.rnd.integerInRange(50, this.game.world.height - 50), "town");
+			town.anchor.setTo(0.5);
+			town.inputEnabled = true;
+			town.events.onInputDown.add(selectTown,this);
+			town.events.onInputUp.add(confirmTown, this);
+		}
+*/
+
+ var town = this.add.image(this.rnd.integerInRange(50, this.game.world.width - 50), game.rnd.integerInRange(50, this.game.world.height - 50), "town");
+                        town.anchor.setTo(0.5);
+                        town.inputEnabled = true;
+                        town.events.onInputDown.add(selectTown,this);
+ var town = this.add.image(this.rnd.integerInRange(50, this.game.world.width - 50), game.rnd.integerInRange(50, this.game.world.height - 50), "town");
+                        town.anchor.setTo(0.5);
+                        town.inputEnabled = true;
+                        town.events.onInputDown.add(selectTown,this);
+                        town.events.onInputUp.add(confirmTown, this);
+                        town.events.onInputUp.add(confirmTown, this);
+
+
+		this.input.onUp.add(clickMap, this);
+                //if (faisal)
+                //      this.state.start('faisal');
+                //else if (alex)
+                //      this.state.start('alex');
+                // and therest of the people like that as well
+        },
+	update: function() {
+		this.input.onUp.add(clickMap, this);
+	}
+};
+
+var candidateTown;
+
+function clickMap() {
+	console.log("Clicked the map");
+}
+
+function selectTown(sprite, pointer) {
+	candidateTown = sprite;
+}
+
+function confirmTown(sprite, pointer) {
+	if(candidateTown == sprite) {
+		alert("Town selected");
+	}
+}

@@ -1,0 +1,37 @@
+<body onload=''>
+	<div class='container-large' id='panel'>
+		<h2 class='page-header'>Forum</h2>
+		<div class='container'>
+			<form method="post" action="/comments/forum">
+			<div class='row'>
+				<div class='col-xs-12'>
+					<input name='tag' id='tag' type="text" class="form-control" placeholder="Tag">
+				</div>
+				<div class='col-xs-12'>
+					<textarea name='message' rows='5' id='message' type="text" class="form-control" placeholder="Message"></textarea>
+				</div>
+			</div>
+			<div id='submit-container'>	
+				<div class='col-lg-12'>
+					<button type='submit' class='btn btn-defualt'>Post</button>
+				</div>
+			</div>
+			</form>
+		</div>	
+		<div class='container' id='comments-container'>
+			{{# each comments}}
+					<div class='row'>
+					<div class='col-lg-12 col-md-12'>
+						<p class='time'>Posted on: {{this.time}}</p>
+						<div class='col-xs-12'>
+							<p class='tag'>[{{this.tag}}]</p>
+						</div>
+						<h3 class='username'>{{this.username}}</h3>
+						<p class='comment'>{{this.message}}</p>
+					</div>
+					</div>
+			{{/each}}
+		</div>
+	</div>
+	<script src='/javascripts/script.js'></script>
+</body>
