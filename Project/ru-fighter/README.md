@@ -1,6 +1,9 @@
 RU-Fighter Release 1
-Features:
-    Basic 4 Skill combat system
-    Skill animations
+A street fighter style turn based fighting RPG Game
 
-TRAVIS CI
+Description:
+    -Website built on NodeJS, Node handles navigation and login and connecting to the database (MongoDB)
+    -MongoDB holds user accounts information such as uername password and progress in the game as well as game preferences
+    -Game built on PhaserJS
+
+keys.json not included for obvious reasons
