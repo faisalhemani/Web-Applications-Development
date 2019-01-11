@@ -12,7 +12,7 @@ var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://FaisalHemani:Masoom14@ds249727.mlab.com:49727/rufighter');
+mongoose.connect('DATABASE URL HERE');
 var db = mongoose.connection;
 
 var index = require('./routes/index');
